@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Foldit:wght@600&display=swap');
+
+@font-face {
+    font-family:'idroid';
+    src: url('fontes/idroid.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor-01: #c5ebd6;
+    --cor-02: #83e1ad;
+    --cor-03: #3ddc84;
+    --cor-04: #2fa866;
+    --cor-05: #1a5c37;
+    --cor-06: #063d1e;
+
+    --fonte-principal: "Barlow Condensed", sans-serif;
+    --fonte-android: 'idroid', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor-02);
+}
+
+header{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.911);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(0deg, var(--cor-05), var(--cor-03));
+    margin: 0px;
+    height: 120px;
+    box-shadow: 3px 8px 20px 1px rgba(0, 0, 0, 0.555);
+}
+
+nav{
+    text-align: left;
+    margin: 5px 0px 4px 10px;
+}
+
+nav > a{  
+    font: normal 500 0.80em "Barlow Condensed", sans-serif;
+    color: rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+nav > a:hover{
+    background-image: linear-gradient(180deg, var(--cor-06), var(--cor-02));
+    color: var(--cor-06);
+    text-decoration: underline;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+main{
+    background-color: white;
+    margin: 0px auto 15px auto;
+    padding: 0px 0px 10px 0px ;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 2px 20px 1px rgba(0, 0, 0, 0.555);
+    min-width: 300px;
+    max-width: 600px;
+}
+
+img{
+    width: 95%;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+.fotinha{
+    width: 300px;
+}
+
+h1{ 
+    color: var(--cor-06);
+    font: normal bold 1.3em var(--fonte-android);
+    padding: 15px;
+    margin: 0px;
+}
+
+#principal{
+    font: normal 500 1.5em "Barlow Condensed", sans-serif;
+    color: white;
+    font: normal normal 1.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+
+.tech{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.911);
+    font-size:0.80em;
+    margin: 1px 1px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.295);
+}
+
+h2{
+    color: var(--cor-05);
+    background-image: linear-gradient(90deg, var(--cor-01), white);
+    font: normal bold 1em 'idroid';
+    margin-left: 10px;
+    text-indent: 8px;
+}
+
+p{  
+    font: 0.9em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 10px 12px 10px;
+    text-align: justify;
+    text-indent: 15px;
+    width: 95%;
+}
+
+article{
+    border-radius: 10px;
+    padding: 0px 0px 5px 0px;
+    margin:  0px auto 15px auto;
+    width: 95%;
+    background-color: var(--cor-01);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+h3{ 
+    font: 1em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    padding: 6px 14px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    background-color: var(--cor-03);
+}
+
+ul{
+    display: inline-block;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    background-color: var(--cor-04);
+}
+
+mark{
+    background-color: transparent;
+    color: var(--cor-05);
+    font-weight: bold;
+}
+
+section.video{
+    width: 100%;
+    background-color: var(--cor-05);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+.link{
+    font:bold 0.9em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: var(--cor-04);
+}
+
+.link::after{
+    content: ' ←';
+}
